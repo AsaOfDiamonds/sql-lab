@@ -38,6 +38,10 @@ values ('The Shire', 'Bilbo Baggins', '1 Hobbit-Hole', 'Bag End', '111', 'Middle
 ##8 update _Bilbo Baggins_ record so that the postal code changes to _"11122"_.
 update customers
 set postalCode = 11122
+where customerID = 92
+
+update customers
+set postalCode = 11122
 where postalCode = 111
 
 ##9 list orders grouped by customer showing the number of orders per customer. _Rattlesnake Canyon Grocery_ should have 7 orders.
